@@ -1,0 +1,331 @@
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../img/DeWatermark.ai_1729264526816.png); /* Imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-color: #2ecc71;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 150px;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Botão de login */
+.login-btn {
+  background-color: #fff;
+  color: #2ecc71;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+/* Modal para login */
+.modal-content {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 30px;
+  position: relative;
+}
+
+.modal-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2ecc71;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 15px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal input[type="text"],
+.modal input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.modal input[type="text"]:focus,
+.modal input[type="password"]:focus {
+  border-color: #2ecc71;
+  outline: none;
+}
+
+.modal input.icon {
+  background-image: url('user-icon.png');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.modal input.password-icon {
+  background-image: url('password-icon.png'); 
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  margin-bottom: 10px;
+}
+
+.btn-icon {
+  border: none; 
+  background-color: #28a745;
+  border-radius: 50%; 
+  padding: 10px; 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+}
+
+.btn-icon:hover {
+  background-color: #218838; /* Cor mais escura ao passar o mouse */
+}
+
+.btn-icon img {
+  width: 20px; 
+  height: 20px; 
+}
+
+/* Botões de login social */
+.modal .social-login {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modal .social-login button {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .social-login button.google {
+  background-color: #dd4b39;
+}
+
+.modal .social-login button.facebook {
+  background-color: #3b5998;
+}
+
+.modal .social-login button.twitter {
+  background-color: #1da1f2;
+}
+
+.modal .social-login button i {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Rodapé do modal */
+.modal-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.modal-footer a {
+  color: #2ecc71;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para a seção do Pantanal */
+.pantanal-info,
+.junte-se,
+.fotos-planalto {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-top: 30px;
+  border-radius: 8px; 
+}
+
+.pantanal-info h2 {
+  font-size: 36px;
+  color: #2ecc71;
+  margin-bottom: 20px;
+}
+
+.pantanal-info p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.pantanal-info .cta-btn {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.pantanal-info .cta-btn:hover {
+  background-color: #d35400;
+}
+
+.junte-se .card,
+.fotos-planalto .card {
+  background-color: rgba(255, 255, 255, 0.3); 
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.junte-se .card-body,
+.fotos-planalto .card-body {
+  text-align: center;
+}
+
+.pantanal-news {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 50px 20px;
+  margin-top: 30px;
+  border-radius: 8px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.pantanal-news h2 {
+  font-size: 36px;
+  color: #2ecc71;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.news-grid {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.news-item {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  color: #218838;
+}
+
+.news-item img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.news-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #27ae60;
+}
+
+.news-content p {
+  font-size: 16px;
+  color: #218838;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+/* Estilos do Carrossel */
+.carousel {
+  max-width: 10000px; 
+  margin: auto; 
+}
+
+.carousel-item {
+  height: 400px; 
+}
+.carousel-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%
+    
+  }
+
+  .carousel-item {
+    height: 200px;
+  }
+}
